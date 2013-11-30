@@ -1,2 +1,7 @@
 <h1>Welcome</h1>
-<p>This is my Welcome page.</p>
+
+Loop through every post, and show me that post.
+
+<% @posts.each do |post| %>
+<%= render 'posts/post', post: post %>
+<% end %>
